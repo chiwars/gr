@@ -1,52 +1,48 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="783" x="-355" y="77">
-    <next>
-      <block type="controls_whileUntil" id="706" inline="false">
-        <field name="MODE">UNTIL</field>
-        <value name="NUMBER">
-          <block type="sensor_button" id="713">
-            <field name="OBJECT">ENTER</field>
-          </block>
-        </value>
-        <statement name="DO">
-          <block type="controls_if" id="720" inline="false">
-            <value name="IF0">
-              <block type="logic_compare" id="727" inline="true">
-                <field name="OP">LT</field>
-                <value name="A">
-                  <block type="sensor_object" id="742">
-                    <field name="OBJECT">LEFTFRONT</field>
-                  </block>
-                </value>
-                <value name="B">
-                  <block type="math_number" id="749">
-                    <field name="NUM">75</field>
-                  </block>
-                </value>
+  <block type="controls_whileUntil" id="706" inline="false" x="-346" y="122">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="713">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="controls_if" id="720" inline="false">
+        <value name="IF0">
+          <block type="logic_compare" id="727" inline="true">
+            <field name="OP">LT</field>
+            <value name="A">
+              <block type="sensor_object" id="742">
+                <field name="OBJECT">LEFTFRONT</field>
               </block>
             </value>
-            <statement name="DO0">
-              <block type="led_select" id="758" inline="true">
-                <field name="ACTION">FLASH</field>
-                <value name="LED">
-                  <block type="math_number" id="765">
-                    <field name="NUM">5</field>
-                  </block>
-                </value>
+            <value name="B">
+              <block type="math_number" id="749">
+                <field name="NUM">75</field>
               </block>
-            </statement>
-            <next>
-              <block type="robot_delay" id="767" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="774">
-                    <field name="NUM">150</field>
-                  </block>
-                </value>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="led_select" id="758" inline="true">
+            <field name="ACTION">FLASH</field>
+            <value name="LED">
+              <block type="math_number" id="765">
+                <field name="NUM">5</field>
               </block>
-            </next>
+            </value>
           </block>
         </statement>
+        <next>
+          <block type="robot_delay" id="767" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="774">
+                <field name="NUM">150</field>
+              </block>
+            </value>
+          </block>
+        </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
