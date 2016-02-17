@@ -18,8 +18,8 @@
               </block>
             </value>
             <value name="B">
-              <block type="sensor_object" id="1023">
-                <field name="OBJECT">RIGHTFRONT</field>
+              <block type="math_number" id="1040">
+                <field name="NUM">75</field>
               </block>
             </value>
           </block>
