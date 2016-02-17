@@ -1,3 +1,61 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="1144" x="-880" y="17"></block>
+  <block type="oled_cleardisplay" id="1247" x="-1055" y="-502">
+    <next>
+      <block type="oled_setcursor" id="1256" inline="true">
+        <value name="STARTX">
+          <block type="math_number" id="1293">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="STARTY">
+          <block type="math_number" id="1294">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <next>
+          <block type="oled_drawtext" id="1265">
+            <field name="TEXT">Hi again!</field>
+            <next>
+              <block type="oled_setcursor" id="1274" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="1295">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="1297">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_drawtext" id="1283">
+                    <field name="TEXT">Can`t wait for...</field>
+                    <next>
+                      <block type="oled_setcursor" id="1284" inline="true">
+                        <value name="STARTX">
+                          <block type="math_number" id="1296">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <value name="STARTY">
+                          <block type="math_number" id="1298">
+                            <field name="NUM">0</field>
+                          </block>
+                        </value>
+                        <next>
+                          <block type="oled_drawtext" id="1286">
+                            <field name="TEXT">Kingdom kids tomorrow!</field>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
 </xml>
