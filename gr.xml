@@ -1,3 +1,42 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="oled_cleardisplay" id="1144" x="-880" y="17"></block>
+  <block type="oled_cleardisplay" id="1144" x="-880" y="17">
+    <next>
+      <block type="oled_setcursor" id="1217" inline="true">
+        <value name="STARTX">
+          <block type="math_number" id="1235">
+            <field name="NUM">0</field>
+          </block>
+        </value>
+        <value name="STARTY">
+          <block type="math_number" id="1236">
+            <field name="NUM">10</field>
+          </block>
+        </value>
+        <next>
+          <block type="oled_drawtext" id="1226">
+            <field name="TEXT">Hi Mommy!</field>
+            <next>
+              <block type="oled_setcursor" id="1227" inline="true">
+                <value name="STARTX">
+                  <block type="math_number" id="1237">
+                    <field name="NUM">0</field>
+                  </block>
+                </value>
+                <value name="STARTY">
+                  <block type="math_number" id="1238">
+                    <field name="NUM">20</field>
+                  </block>
+                </value>
+                <next>
+                  <block type="oled_drawtext" id="1228">
+                    <field name="TEXT">I love you!</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </next>
+  </block>
 </xml>
