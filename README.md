@@ -7,7 +7,7 @@
 ```
 Type              : Scratch
 Version           : 1.0.0
-Author            : chiwars
+Author            :nisa arak
 Firmware          : 42
 ```
 
