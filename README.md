@@ -1,4 +1,4 @@
-variable 13=19
+gr
 ================
 
 
@@ -7,7 +7,7 @@ variable 13=19
 ```
 Type              : Scratch
 Version           : 1.0.0
-Author            :nisa arak
+Author            :chiwars
 Firmware          : 42
 ```
 
