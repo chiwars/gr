@@ -71,7 +71,45 @@
                                               </block>
                                             </value>
                                             <next>
-                                              <block type="multimedia_doupdate" id="266"></block>
+                                              <block type="variables_set" id="281" inline="true">
+                                                <field name="VAR">leftsideobjectsensor</field>
+                                                <value name="VALUE">
+                                                  <block type="sensor_object" id="282">
+                                                    <field name="OBJECT">LEFTSIDE</field>
+                                                  </block>
+                                                </value>
+                                                <next>
+                                                  <block type="oled_setcursor" id="283" inline="true">
+                                                    <value name="STARTX">
+                                                      <block type="math_number" id="284">
+                                                        <field name="NUM">10</field>
+                                                      </block>
+                                                    </value>
+                                                    <value name="STARTY">
+                                                      <block type="math_number" id="285">
+                                                        <field name="NUM">30</field>
+                                                      </block>
+                                                    </value>
+                                                    <next>
+                                                      <block type="oled_drawtext" id="286">
+                                                        <field name="TEXT">left side=</field>
+                                                        <next>
+                                                          <block type="oled_drawnumber" id="287" inline="true">
+                                                            <value name="NUMBER">
+                                                              <block type="variables_get" id="296">
+                                                                <field name="VAR">leftsideobjectsensor</field>
+                                                              </block>
+                                                            </value>
+                                                            <next>
+                                                              <block type="multimedia_doupdate" id="266"></block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
+                                                </next>
+                                              </block>
                                             </next>
                                           </block>
                                         </next>
