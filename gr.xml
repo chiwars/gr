@@ -131,7 +131,45 @@
                                                                               </block>
                                                                             </value>
                                                                             <next>
-                                                                              <block type="multimedia_doupdate" id="266"></block>
+                                                                              <block type="variables_set" id="305" inline="true">
+                                                                                <field name="VAR">rearobjectsensor</field>
+                                                                                <value name="VALUE">
+                                                                                  <block type="sensor_object" id="306">
+                                                                                    <field name="OBJECT">REAR</field>
+                                                                                  </block>
+                                                                                </value>
+                                                                                <next>
+                                                                                  <block type="oled_setcursor" id="307" inline="true">
+                                                                                    <value name="STARTX">
+                                                                                      <block type="math_number" id="308">
+                                                                                        <field name="NUM">10</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <value name="STARTY">
+                                                                                      <block type="math_number" id="309">
+                                                                                        <field name="NUM">50</field>
+                                                                                      </block>
+                                                                                    </value>
+                                                                                    <next>
+                                                                                      <block type="oled_drawtext" id="310">
+                                                                                        <field name="TEXT">rear=</field>
+                                                                                        <next>
+                                                                                          <block type="oled_drawnumber" id="311" inline="true">
+                                                                                            <value name="NUMBER">
+                                                                                              <block type="variables_get" id="312">
+                                                                                                <field name="VAR">rearobjectsensor</field>
+                                                                                              </block>
+                                                                                            </value>
+                                                                                            <next>
+                                                                                              <block type="multimedia_doupdate" id="266"></block>
+                                                                                            </next>
+                                                                                          </block>
+                                                                                        </next>
+                                                                                      </block>
+                                                                                    </next>
+                                                                                  </block>
+                                                                                </next>
+                                                                              </block>
                                                                             </next>
                                                                           </block>
                                                                         </next>
