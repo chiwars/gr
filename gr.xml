@@ -7,37 +7,44 @@
       </block>
     </value>
     <statement name="DO">
-      <block type="variables_set" id="8" inline="true">
-        <field name="VAR">leftfrontobjectsensor</field>
-        <value name="VALUE">
-          <block type="sensor_object" id="44">
-            <field name="OBJECT">LEFTFRONT</field>
-          </block>
-        </value>
+      <block type="multimedia_stopupdate" id="247">
         <next>
-          <block type="oled_cleardisplay" id="71">
+          <block type="variables_set" id="8" inline="true">
+            <field name="VAR">leftfrontobjectsensor</field>
+            <value name="VALUE">
+              <block type="sensor_object" id="44">
+                <field name="OBJECT">LEFTFRONT</field>
+              </block>
+            </value>
             <next>
-              <block type="oled_setcursor" id="80" inline="true">
-                <value name="STARTX">
-                  <block type="math_number" id="105">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
-                <value name="STARTY">
-                  <block type="math_number" id="106">
-                    <field name="NUM">10</field>
-                  </block>
-                </value>
+              <block type="oled_cleardisplay" id="71">
                 <next>
-                  <block type="oled_drawtext" id="115">
-                    <field name="TEXT">left front=</field>
+                  <block type="oled_setcursor" id="80" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="105">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="106">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="oled_drawnumber" id="142" inline="true">
-                        <value name="NUMBER">
-                          <block type="variables_get" id="148">
-                            <field name="VAR">leftfrontobjectsensor</field>
+                      <block type="oled_drawtext" id="115">
+                        <field name="TEXT">left front=</field>
+                        <next>
+                          <block type="oled_drawnumber" id="142" inline="true">
+                            <value name="NUMBER">
+                              <block type="variables_get" id="148">
+                                <field name="VAR">leftfrontobjectsensor</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="multimedia_doupdate" id="266"></block>
+                            </next>
                           </block>
-                        </value>
+                        </next>
                       </block>
                     </next>
                   </block>
